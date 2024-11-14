@@ -1,0 +1,9 @@
+
+1. CheckPalindromeinDLL
+2. CLLWithHeaderNode (2 times)
+3. PolynomialAdditionUsingLL.c
+4. ReverseSinglyLinkedList.c
+5. ReverseSLLAfterMiddle.c
+6. CircularSLLOperations.c
+7. CLLEquality Check.c
+8. ReverseSLLINPlace.c

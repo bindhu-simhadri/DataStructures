@@ -1,0 +1,31 @@
+Give any six differences between Array and Linked List.
+
+1. Memory Allocation:
+
+Array: Memory is allocated contiguously in a single block. This can lead to wasted space if the array is not fully utilized.
+Linked List: Memory is allocated dynamically for each element (node), so it can grow or shrink as needed.
+
+2. Size:
+
+Array: The size of an array is fixed once it is declared. Resizing an array requires creating a new array and copying the data.
+Linked List: The size of a linked list is dynamic. It can grow or shrink as nodes are added or removed.
+
+3. Access Time:
+
+Array: Elements can be accessed directly via an index, making it efficient for random access (constant time O(1) for access).
+Linked List: To access an element, you must traverse the list starting from the head, resulting in linear time O(n) for access.
+
+4.Insertion/Deletion:
+
+Array: Insertion or deletion at a specific position requires shifting elements to accommodate changes, leading to O(n) time complexity.
+Linked List: Insertion and deletion at the beginning or in the middle are more efficient, typically O(1), since no shifting is needed. However, for random access or inserting at a specific position, O(n) traversal is required.
+ 
+5. Memory Overhead:
+
+Array: Arrays have no additional memory overhead beyond the storage for the data itself.
+Linked List: Each node in a linked list requires extra memory for the pointers (next and/or prev), which increases memory overhead.
+
+6. Efficiency for Different Operations:
+
+Array: Arrays are more efficient when you need fast access to elements via indices or need to perform operations like sorting that benefit from contiguous memory.
+Linked List: Linked lists are more efficient for applications where the list size frequently changes (insertions and deletions), especially when these operations are performed at the beginning or end of the list.
