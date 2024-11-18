@@ -1,0 +1,111 @@
+4A) Suppose the threaded binary tree is given  
+                8
+               /   \
+             5       12
+           /   \     /   \
+         3      7  10    15
+
+Insert the elements 4, 9, 11, 13, 16 and 2 in that tree and show all the steps in pictorial form.
+Point out one reason for using the threaded binary tree
+
+
+ans. 
+A threaded binary tree is a type of binary tree where some null pointers are replaced with pointers called "threads." These threads make inorder traversal faster and more efficient, without using a stack or recursion.
+
+Initial Tree
+
+        8
+       /   \
+     5       12
+   /   \     /   \
+ 3      7  10    15
+
+
+Steps to Insert Elements
+1. Insert 4
+Traverse to the left subtree of 8 → 5 → 3.
+Insert 4 as the right child of 3 (since 3 doesn't have a right child).
+
+        8
+       /   \
+     5       12
+   /   \     /   \
+ 3      7  10    15
+  \
+   4
+
+
+2. Insert 9
+Traverse to the right subtree of 8 → 12 → 10.
+Insert 9 as the left child of 10 (since 10 doesn't have a left child).
+
+        8
+       /   \
+     5       12
+   /   \     /   \
+ 3      7  10    15
+  \        /
+   4      9
+
+3. Insert 11
+Traverse to the right subtree of 8 → 12 → 10.
+Insert 11 as the right child of 10 (since 10 doesn't have a right child).
+
+          8
+       /     \
+     5        12
+   /   \     /   \
+ 3      7  10    15
+  \        / \
+   4      9  11
+
+4. Insert 13
+Traverse to the right subtree of 8 → 12 → 15.
+Insert 13 as the left child of 15 (since 15 doesn't have a left child).
+
+          8
+       /     \
+     5        12
+   /   \     /   \
+ 3      7  10    15
+  \         / \   /
+   4       9  11 13
+
+5. Insert 16
+Traverse to the right subtree of 8 → 12 → 15.
+Insert 16 as the right child of 15 (since 15 doesn't have a right child).
+
+          8
+       /     \
+     5        12
+   /   \     /   \
+ 3      7  10    15
+  \        / \   / \
+   4      9  11 13 16
+
+6. Insert 2
+Traverse to the left subtree of 8 → 5 → 3.
+Insert 2 as the left child of 3 (since 3 doesn't have a left child).
+
+             8
+         /      \
+       5        12
+     /   \     /   \
+   3      7  10    15
+ /  \        / \   / \
+2    4      9  11 13 16
+
+Final Tree with Inorder Threads
+For threaded binary trees, threads are added for null pointers to facilitate inorder traversal. Pointers are created for the next inorder successor where no child exists. For the final tree:
+Threads would connect:
+2 → 3
+4 → 5
+7 → 8
+11 → 12
+13 → 15
+16 → (back to the root or NULL).
+
+
+
+
+
